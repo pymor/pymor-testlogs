@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="pytest" skips="0" tests="106" time="10.416"><testcase classname="src.pymortests.core.config" file="src/pymortests/core/config.py" line="8" name="test_repr" time="0.04858064651489258"></testcase><testcase classname="src.pymortests.core.config" file="src/pymortests/core/config.py" line="12" name="test_entries" time="0.0007936954498291016"></testcase><testcase classname="src.pymortests.core.config" file="src/pymortests/core/config.py" line="19" name="test_dir" time="0.001024484634399414"></testcase><testcase classname="src.pymortests.core.defaults" file="src/pymortests/core/defaults.py" line="14" name="test_defaults" time="0.0010221004486083984"></testcase><testcase classname="src.pymortests.core.defaults" file="src/pymortests/core/defaults.py" line="30" name="test_print_defaults" time="0.0491175651550293"><system-out>                                                       defaults affecting state id calcuation                                                       
+                                                       ======================================                                                       
+
+path (shortened)                                                       value                                                                  source
+---------------------------------------------------------------------  ---------------------------------------------------------------------  ------
+basic.almost_equal.atol                                                1e-14                                                                  code  
+basic.almost_equal.rtol                                                1e-14                                                                  code  
+genericsolvers.apply_inverse.check_finite                              True                                                                   code  
+genericsolvers.apply_inverse.default_least_squares_solver              &apos;generic_least_squares_lsmr&apos;                                           code  
+genericsolvers.apply_inverse.default_solver                            &apos;generic_lgmres&apos;                                                       code  
+genericsolvers.solver_options.least_squares_lsmr_atol                  1e-06                                                                  code  
+genericsolvers.solver_options.least_squares_lsmr_btol                  1e-06                                                                  code  
+genericsolvers.solver_options.least_squares_lsmr_conlim                100000000.0                                                            code  
+genericsolvers.solver_options.least_squares_lsmr_damp                  0.0                                                                    code  
+genericsolvers.solver_options.least_squares_lsmr_maxiter               None                                                                   code  
+genericsolvers.solver_options.least_squares_lsqr_atol                  1e-06                                                                  code  
+genericsolvers.solver_options.least_squares_lsqr_btol                  1e-06                                                                  code  
+genericsolvers.solver_options.least_squares_lsqr_conlim                100000000.0                                                            code  
+genericsolvers.solver_options.least_squares_lsqr_iter_lim              None                                                                   code  
+genericsolvers.solver_options.lgmres_inner_m                           39                                                                     code  
+genericsolvers.solver_options.lgmres_maxiter                           1000                                                                   code  
+genericsolvers.solver_options.lgmres_outer_k                           3                                                                      code  
+genericsolvers.solver_options.lgmres_tol                               1e-05                                                                  code  
+gram_schmidt.gram_schmidt.atol                                         1e-13                                                                  code  
+gram_schmidt.gram_schmidt.check                                        True                                                                   code  
+gram_schmidt.gram_schmidt.check_tol                                    0.001                                                                  code  
+gram_schmidt.gram_schmidt.reiterate                                    True                                                                   code  
+gram_schmidt.gram_schmidt.reiteration_threshold                        0.1                                                                    code  
+gram_schmidt.gram_schmidt.rtol                                         1e-13                                                                  code  
+newton.newton.atol                                                     -1.0                                                                   code  
+newton.newton.maxiter                                                  100                                                                    code  
+newton.newton.miniter                                                  0                                                                      code  
+newton.newton.rtol                                                     -1.0                                                                   code  
+newton.newton.stagnation_threshold                                     0.9                                                                    code  
+newton.newton.stagnation_window                                        3                                                                      code  
+pod.pod.atol                                                           0.0                                                                    code  
+pod.pod.check                                                          True                                                                   code  
+pod.pod.check_tol                                                      1e-10                                                                  code  
+pod.pod.l2_err                                                         0.0                                                                    code  
+pod.pod.orthonormalize                                                 True                                                                   code  
+pod.pod.rtol                                                           4e-08                                                                  code  
+pod.pod.symmetrize                                                     False                                                                  code  
+fenics._solver_options.preconditioner                                  &apos;amg&apos;                                                                  code  
+fenics._solver_options.solver                                          &apos;bicgstab&apos;                                                             code  
+pyamg.apply_inverse.check_finite                                       True                                                                   code  
+pyamg.apply_inverse.default_solver                                     &apos;pyamg_solve&apos;                                                          code  
+pyamg.solver_options.maxiter                                           400                                                                    code  
+pyamg.solver_options.rs_CF                                             &apos;RS&apos;                                                                   code  
+pyamg.solver_options.rs_accel                                          None                                                                   code  
+pyamg.solver_options.rs_coarse_solver                                  &apos;pinv2&apos;                                                                code  
+pyamg.solver_options.rs_cycle                                          &apos;V&apos;                                                                    code  
+pyamg.solver_options.rs_max_coarse                                     500                                                                    code  
+pyamg.solver_options.rs_max_levels                                     10                                                                     code  
+pyamg.solver_options.rs_maxiter                                        100                                                                    code  
+pyamg.solver_options.rs_postsmoother                                   (&apos;gauss_seidel&apos;, {&apos;sweep&apos;: &apos;symmetric&apos;})                               code  
+pyamg.solver_options.rs_strength                                       (&apos;classical&apos;, {&apos;theta&apos;: 0.25})                                         code  
+pyamg.solver_options.rs_tol                                            1e-05                                                                  code  
+pyamg.solver_options.sa_accel                                          None                                                                   code  
+pyamg.solver_options.sa_aggregate                                      &apos;standard&apos;                                                             code  
+pyamg.solver_options.sa_coarse_solver                                  &apos;pinv2&apos;                                                                code  
+pyamg.solver_options.sa_cycle                                          &apos;V&apos;                                                                    code  
+pyamg.solver_options.sa_diagonal_dominance                             False                                                                  code  
+pyamg.solver_options.sa_improve_candidates                             ((&apos;block_gauss_seidel&apos;, {&apos;sweep&apos;: &apos;symmetric&apos;, &apos;iterations&apos;: 4}),      code  
+                                                                       None)                                                                        
+pyamg.solver_options.sa_max_coarse                                     500                                                                    code  
+pyamg.solver_options.sa_max_levels                                     10                                                                     code  
+pyamg.solver_options.sa_maxiter                                        100                                                                    code  
+pyamg.solver_options.sa_postsmoother                                   (&apos;block_gauss_seidel&apos;, {&apos;sweep&apos;: &apos;symmetric&apos;})                         code  
+pyamg.solver_options.sa_presmoother                                    (&apos;block_gauss_seidel&apos;, {&apos;sweep&apos;: &apos;symmetric&apos;})                         code  
+pyamg.solver_options.sa_smooth                                         (&apos;jacobi&apos;, {&apos;omega&apos;: 1.3333333333333333})                              code  
+pyamg.solver_options.sa_strength                                       &apos;symmetric&apos;                                                            code  
+pyamg.solver_options.sa_symmetry                                       &apos;hermitian&apos;                                                            code  
+pyamg.solver_options.sa_tol                                            1e-05                                                                  code  
+pyamg.solver_options.tol                                               1e-05                                                                  code  
+scipy.apply_inverse.check_finite                                       True                                                                   code  
+scipy.apply_inverse.default_least_squares_solver                       &apos;scipy_least_squares_lsmr&apos;                                             code  
+scipy.apply_inverse.default_solver                                     &apos;scipy_spsolve&apos;                                                        code  
+scipy.solver_options.bicgstab_maxiter                                  None                                                                   code  
+scipy.solver_options.bicgstab_tol                                      1e-15                                                                  code  
+scipy.solver_options.least_squares_lsmr_atol                           1e-06                                                                  code  
+scipy.solver_options.least_squares_lsmr_btol                           1e-06                                                                  code  
+scipy.solver_options.least_squares_lsmr_conlim                         100000000.0                                                            code  
+scipy.solver_options.least_squares_lsmr_damp                           0.0                                                                    code  
+scipy.solver_options.least_squares_lsmr_maxiter                        None                                                                   code  
+scipy.solver_options.least_squares_lsqr_atol                           1e-06                                                                  code  
+scipy.solver_options.least_squares_lsqr_btol                           1e-06                                                                  code  
+scipy.solver_options.least_squares_lsqr_conlim                         100000000.0                                                            code  
+scipy.solver_options.least_squares_lsqr_iter_lim                       None                                                                   code  
+scipy.solver_options.lgmres_inner_m                                    39                                                                     code  
+scipy.solver_options.lgmres_maxiter                                    1000                                                                   code  
+scipy.solver_options.lgmres_outer_k                                    3                                                                      code  
+scipy.solver_options.lgmres_tol                                        1e-05                                                                  code  
+scipy.solver_options.spilu_drop_rule                                   &apos;basic,area&apos;                                                           code  
+scipy.solver_options.spilu_drop_tol                                    0.0001                                                                 code  
+scipy.solver_options.spilu_fill_factor                                 10                                                                     code  
+scipy.solver_options.spilu_permc_spec                                  &apos;COLAMD&apos;                                                               code  
+scipy.solver_options.spsolve_keep_factorization                        True                                                                   code  
+scipy.solver_options.spsolve_permc_spec                                &apos;COLAMD&apos;                                                               code  
+constructions.induced_norm.raise_negative                              True                                                                   code  
+constructions.induced_norm.tol                                         1e-10                                                                  code  
+fv.jacobian_options.delta                                              1e-07                                                                  code  
+numpy.NumpyMatrixOperator.apply_inverse.check_finite                   True                                                                   code  
+numpy.NumpyMatrixOperator.apply_inverse.default_sparse_solver_backend  &apos;scipy&apos;                                                                code  
+default.new_parallel_pool.allow_mpi                                    True                                                                   code  
+default.new_parallel_pool.ipython_num_engines                          None                                                                   code  
+default.new_parallel_pool.ipython_profile                              None                                                                   code  
+floatcmp.float_cmp.atol                                                1e-14                                                                  code  
+floatcmp.float_cmp.rtol                                                1e-14                                                                  code  
+mpi.event_loop_settings.auto_launch                                    True                                                                   code  
+random.new_random_state.seed                                           42                                                                     code  
+defaults.func.c                                                        43                                                                     user  
+defaults.func.d                                                        3                                                                      code  
+
+
+
+                  defaults not affecting state id calculation                   
+                  ===========================================                   
+
+path (shortened)                     value                                source
+-----------------------------------  -----------------------------------  ------
+genericsolvers.solver_options.least  False                                code  
+_squares_lsmr_show                                                              
+genericsolvers.solver_options.least  False                                code  
+_squares_lsqr_show                                                              
+pyamg.solver_options.verb            False                                code  
+scipy.solver_options.least_squares_  False                                code  
+lsmr_show                                                                       
+scipy.solver_options.least_squares_  False                                code  
+lsqr_show                                                                       
+cache.default_regions.disk_max_size  1073741824                           code  
+cache.default_regions.disk_path      &apos;/tmp/pymor.cache.pymor&apos;             code  
+cache.default_regions.memory_max_ke  1000                                 code  
+ys                                                                              
+cache.default_regions.persistent_ma  1073741824                           code  
+x_size                                                                          
+cache.default_regions.persistent_pa  &apos;/tmp/pymor.persistent.cache.pymor&apos;  code  
+th                                                                              
+logger.getLogger.filename            &apos;&apos;                                   code  
+logger.set_log_format.block_timings  False                                code  
+logger.set_log_format.indent_blocks  True                                 code  
+logger.set_log_format.max_hierarchy  1                                    code  
+_level                                                                          
+logger.set_log_levels.levels         None                                 code  
+gl.colormap_texture.name             &apos;viridis&apos;                            code  
+qt.visualize_patch.backend           &apos;gl&apos;                                 code  
+pprint.format_array.compact_print    False                                code  
+
+</system-out></testcase><testcase classname="src.pymortests.core.defaults" file="src/pymortests/core/defaults.py" line="34" name="test_write_defaults_to_file" time="0.012391805648803711"><system-out>Written defaults to file /tmp/tmpumg07gs6/defaults.py
+</system-out></testcase><testcase classname="src.pymortests.core.defaults" file="src/pymortests/core/defaults.py" line="39" name="test_load_defaults_from_file" time="0.013231277465820312"><system-out>Written defaults to file /tmp/tmppba25mmi/defaults.py
+</system-out></testcase><testcase classname="src.pymortests.core.interface.Test_ListVectorSpace_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0009257793426513672"></testcase><testcase classname="src.pymortests.core.interface.Test_ProductParameterFunctional_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0007703304290771484"></testcase><testcase classname="src.pymortests.core.interface.Test_NonProjectedReconstructor_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005567073822021484"></testcase><testcase classname="src.pymortests.core.interface.Test_IamMemoryCached_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005917549133300781"></testcase><testcase classname="src.pymortests.core.interface.Test_IamLimitedCached_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005793571472167969"></testcase><testcase classname="src.pymortests.core.interface.Test_TorusDomain_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005908012390136719"></testcase><testcase classname="src.pymortests.core.interface.Test_StationaryProblem_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005612373352050781"></testcase><testcase classname="src.pymortests.core.interface.Test_IWillBeCopied_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0008256435394287109"></testcase><testcase classname="src.pymortests.core.interface.Test_EngquistOsherFlux_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.00052642822265625"></testcase><testcase classname="src.pymortests.core.interface.Test_ExplicitEulerTimeStepper_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.000530242919921875"></testcase><testcase classname="src.pymortests.core.interface.Test_BlockVectorSpace_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.000537872314453125"></testcase><testcase classname="src.pymortests.core.interface.Test_InstationaryProblem_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005581378936767578"></testcase><testcase classname="src.pymortests.core.interface.Test_CacheImplementer_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005311965942382812"></testcase><testcase classname="src.pymortests.core.interface.Test_CircleDomain_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005838871002197266"></testcase><testcase classname="src.pymortests.core.interface.Test_CubicParameterSpace_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005726814270019531"></testcase><testcase classname="src.pymortests.core.interface.Test_GenericParameterFunctional_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005373954772949219"></testcase><testcase classname="src.pymortests.core.interface.Test_RectDomain_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0006778240203857422"></testcase><testcase classname="src.pymortests.core.interface.Test_SimplifiedEngquistOsherFlux_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005826950073242188"></testcase><testcase classname="src.pymortests.core.interface.Test_PolygonalDomain_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005424022674560547"></testcase><testcase classname="src.pymortests.core.interface.Test_LineDomain_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005919933319091797"></testcase><testcase classname="src.pymortests.core.interface.Test_CylindricalDomain_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005953311920166016"></testcase><testcase classname="src.pymortests.core.interface.Test_ReduceCoerciveEstimator_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005373954772949219"></testcase><testcase classname="src.pymortests.core.interface.Test_ReduceParabolicEstimator_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005300045013427734"></testcase><testcase classname="src.pymortests.core.interface.Test_ReduceCoerciveSimpleEstimator_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005166530609130859"></testcase><testcase classname="src.pymortests.core.interface.Test_LaxFriedrichsFlux_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005242824554443359"></testcase><testcase classname="src.pymortests.core.interface.Test_NumpyVectorSpace_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005254745483398438"></testcase><testcase classname="src.pymortests.core.interface.Test_IamDiskCached_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005400180816650391"></testcase><testcase classname="src.pymortests.core.interface.Test_InducedNorm_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005064010620117188"></testcase><testcase classname="src.pymortests.core.interface.Test_ImplicitEulerTimeStepper_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005402565002441406"></testcase><testcase classname="src.pymortests.core.interface.Test_MPIVisualizer_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005278587341308594"></testcase><testcase classname="src.pymortests.core.interface.Test_OperatorBase_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0004956722259521484"></testcase><testcase classname="src.pymortests.core.interface.Test_MPIVectorSpace_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005102157592773438"></testcase><testcase classname="src.pymortests.core.interface.Test_ProjectionParameterFunctional_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0005347728729248047"></testcase><testcase classname="src.pymortests.core.interface.Test_FunctionBase_Withcopy" file="src/pymortests/core/interface.py" line="65" name="test_with_" time="0.0004911422729492188"></testcase><testcase classname="src.pymortests.core.interface.Test_Interface" file="src/pymortests/core/interface.py" line="19" name="testImplementorlist" time="0.0005409717559814453"></testcase><testcase classname="src.pymortests.core.interface.Test_Interface" file="src/pymortests/core/interface.py" line="25" name="testAbstractMethods" time="0.0023965835571289062"></testcase><testcase classname="src.pymortests.core.interface.Test_Interface" file="src/pymortests/core/interface.py" line="57" name="testVersion" time="0.0005078315734863281"></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[RuleTable]" time="0.0021064281463623047"><system-err>00:08 |WARNING|RuleTable: warn -- logger &lt;logging.Logger object at 0x7f90e5f7fcf8&gt;
+00:08 |ERROR|RuleTable: error -- logger &lt;logging.Logger object at 0x7f90e5f7fcf8&gt;
+00:08 RuleTable: info -- logger &lt;logging.Logger object at 0x7f90e5f7fcf8&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[PatchVisualizer]" time="0.0011343955993652344"><system-err>00:08 |WARNING|PatchVisualizer: warn -- logger &lt;logging.Logger object at 0x7f90e5eea240&gt;
+00:08 |ERROR|PatchVisualizer: error -- logger &lt;logging.Logger object at 0x7f90e5eea240&gt;
+00:08 PatchVisualizer: info -- logger &lt;logging.Logger object at 0x7f90e5eea240&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[OnedVisualizer]" time="0.0010688304901123047"><system-err>00:08 |WARNING|OnedVisualizer: warn -- logger &lt;logging.Logger object at 0x7f90e5eea630&gt;
+00:08 |ERROR|OnedVisualizer: error -- logger &lt;logging.Logger object at 0x7f90e5eea630&gt;
+00:08 OnedVisualizer: info -- logger &lt;logging.Logger object at 0x7f90e5eea630&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[FenicsVisualizer]" time="0.001119375228881836"><system-err>00:08 |WARNING|FenicsVisualizer: warn -- logger &lt;logging.Logger object at 0x7f90e40be828&gt;
+00:08 |ERROR|FenicsVisualizer: error -- logger &lt;logging.Logger object at 0x7f90e40be828&gt;
+00:08 FenicsVisualizer: info -- logger &lt;logging.Logger object at 0x7f90e40be828&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[BoringTestClass]" time="0.001096487045288086"><system-err>00:08 |WARNING|BoringTestClass: warn -- logger &lt;logging.Logger object at 0x7f90daf2ddd8&gt;
+00:08 |ERROR|BoringTestClass: error -- logger &lt;logging.Logger object at 0x7f90daf2ddd8&gt;
+00:08 BoringTestClass: info -- logger &lt;logging.Logger object at 0x7f90daf2ddd8&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[RemoteObjectManager]" time="0.0011496543884277344"><system-err>00:08 |WARNING|RemoteObjectManager: warn -- logger &lt;logging.Logger object at 0x7f90daf2f630&gt;
+00:08 |ERROR|RemoteObjectManager: error -- logger &lt;logging.Logger object at 0x7f90daf2f630&gt;
+00:08 RemoteObjectManager: info -- logger &lt;logging.Logger object at 0x7f90daf2f630&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[AdaptiveSampleSet]" time="0.0013453960418701172"><system-err>00:08 |WARNING|AdaptiveSampleSet: warn -- logger &lt;logging.Logger object at 0x7f90daf2f828&gt;
+00:08 |ERROR|AdaptiveSampleSet: error -- logger &lt;logging.Logger object at 0x7f90daf2f828&gt;
+00:08 AdaptiveSampleSet: info -- logger &lt;logging.Logger object at 0x7f90daf2f828&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[GenericRBReconstructor]" time="0.0010790824890136719"><system-err>00:08 |WARNING|GenericRBReconstructor: warn -- logger &lt;logging.Logger object at 0x7f90daf33550&gt;
+00:08 |ERROR|GenericRBReconstructor: error -- logger &lt;logging.Logger object at 0x7f90daf33550&gt;
+00:08 GenericRBReconstructor: info -- logger &lt;logging.Logger object at 0x7f90daf33550&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[SubbasisReconstructor]" time="0.0010619163513183594"><system-err>00:08 |WARNING|SubbasisReconstructor: warn -- logger &lt;logging.Logger object at 0x7f90daf33860&gt;
+00:08 |ERROR|SubbasisReconstructor: error -- logger &lt;logging.Logger object at 0x7f90daf33860&gt;
+00:08 SubbasisReconstructor: info -- logger &lt;logging.Logger object at 0x7f90daf33860&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[new_ipcluster_pool]" time="0.0011055469512939453"><system-err>00:08 |WARNING|new_ipcluster_pool: warn -- logger &lt;logging.Logger object at 0x7f90dae7a588&gt;
+00:08 |ERROR|new_ipcluster_pool: error -- logger &lt;logging.Logger object at 0x7f90dae7a588&gt;
+00:08 new_ipcluster_pool: info -- logger &lt;logging.Logger object at 0x7f90dae7a588&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[StationaryProblem]" time="0.0010879039764404297"><system-err>00:08 |WARNING|StationaryProblem: warn -- logger &lt;logging.Logger object at 0x7f910577c160&gt;
+00:08 |ERROR|StationaryProblem: error -- logger &lt;logging.Logger object at 0x7f910577c160&gt;
+00:08 StationaryProblem: info -- logger &lt;logging.Logger object at 0x7f910577c160&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[InstationaryProblem]" time="0.0011222362518310547"><system-err>00:08 |WARNING|InstationaryProblem: warn -- logger &lt;logging.Logger object at 0x7f910577c748&gt;
+00:08 |ERROR|InstationaryProblem: error -- logger &lt;logging.Logger object at 0x7f910577c748&gt;
+00:08 InstationaryProblem: info -- logger &lt;logging.Logger object at 0x7f910577c748&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[InducedNorm]" time="0.0012004375457763672"><system-err>00:08 |WARNING|InducedNorm: warn -- logger &lt;logging.Logger object at 0x7f90f1cc00f0&gt;
+00:08 |ERROR|InducedNorm: error -- logger &lt;logging.Logger object at 0x7f90f1cc00f0&gt;
+00:08 InducedNorm: info -- logger &lt;logging.Logger object at 0x7f90f1cc00f0&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[NonProjectedReconstructor]" time="0.0010824203491210938"><system-err>00:08 |WARNING|NonProjectedReconstructor: warn -- logger &lt;logging.Logger object at 0x7f90daf45978&gt;
+00:08 |ERROR|NonProjectedReconstructor: error -- logger &lt;logging.Logger object at 0x7f90daf45978&gt;
+00:08 NonProjectedReconstructor: info -- logger &lt;logging.Logger object at 0x7f90daf45978&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[ReduceCoerciveEstimator]" time="0.0011663436889648438"><system-err>00:08 |WARNING|ReduceCoerciveEstimator: warn -- logger &lt;logging.Logger object at 0x7f90dae54278&gt;
+00:08 |ERROR|ReduceCoerciveEstimator: error -- logger &lt;logging.Logger object at 0x7f90dae54278&gt;
+00:08 ReduceCoerciveEstimator: info -- logger &lt;logging.Logger object at 0x7f90dae54278&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[ReduceCoerciveSimpleEstimator]" time="0.0011794567108154297"><system-err>00:08 |WARNING|ReduceCoerciveSimpleEstimator: warn -- logger &lt;logging.Logger object at 0x7f90dae54470&gt;
+00:08 |ERROR|ReduceCoerciveSimpleEstimator: error -- logger &lt;logging.Logger object at 0x7f90dae54470&gt;
+00:08 ReduceCoerciveSimpleEstimator: info -- logger &lt;logging.Logger object at 0x7f90dae54470&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[ReduceParabolicEstimator]" time="0.00113677978515625"><system-err>00:08 |WARNING|ReduceParabolicEstimator: warn -- logger &lt;logging.Logger object at 0x7f90dae54748&gt;
+00:08 |ERROR|ReduceParabolicEstimator: error -- logger &lt;logging.Logger object at 0x7f90dae54748&gt;
+00:08 ReduceParabolicEstimator: info -- logger &lt;logging.Logger object at 0x7f90dae54748&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[MPIVisualizer]" time="0.001500844955444336"><system-err>00:08 |WARNING|MPIVisualizer: warn -- logger &lt;logging.Logger object at 0x7f90dae72828&gt;
+00:08 |ERROR|MPIVisualizer: error -- logger &lt;logging.Logger object at 0x7f90dae72828&gt;
+00:08 MPIVisualizer: info -- logger &lt;logging.Logger object at 0x7f90dae72828&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[IamMemoryCached]" time="0.0011882781982421875"><system-err>00:08 |WARNING|IamMemoryCached: warn -- logger &lt;logging.Logger object at 0x7f90f1cd5240&gt;
+00:08 |ERROR|IamMemoryCached: error -- logger &lt;logging.Logger object at 0x7f90f1cd5240&gt;
+00:08 IamMemoryCached: info -- logger &lt;logging.Logger object at 0x7f90f1cd5240&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[IamDiskCached]" time="0.0011525154113769531"><system-err>00:08 |WARNING|IamDiskCached: warn -- logger &lt;logging.Logger object at 0x7f90f1cd5390&gt;
+00:08 |ERROR|IamDiskCached: error -- logger &lt;logging.Logger object at 0x7f90f1cd5390&gt;
+00:08 IamDiskCached: info -- logger &lt;logging.Logger object at 0x7f90f1cd5390&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[IamLimitedCached]" time="0.0011985301971435547"><system-err>00:08 |WARNING|IamLimitedCached: warn -- logger &lt;logging.Logger object at 0x7f90f1cd5780&gt;
+00:08 |ERROR|IamLimitedCached: error -- logger &lt;logging.Logger object at 0x7f90f1cd5780&gt;
+00:08 IamLimitedCached: info -- logger &lt;logging.Logger object at 0x7f90f1cd5780&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[IWillBeCopied]" time="0.001110076904296875"><system-err>00:08 |WARNING|IWillBeCopied: warn -- logger &lt;logging.Logger object at 0x7f90f1cd5518&gt;
+00:08 |ERROR|IWillBeCopied: error -- logger &lt;logging.Logger object at 0x7f90f1cd5518&gt;
+00:08 IWillBeCopied: info -- logger &lt;logging.Logger object at 0x7f90f1cd5518&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[CacheImplementer]" time="0.0011470317840576172"><system-err>00:08 |WARNING|CacheImplementer: warn -- logger &lt;logging.Logger object at 0x7f90daf2d128&gt;
+00:08 |ERROR|CacheImplementer: error -- logger &lt;logging.Logger object at 0x7f90daf2d128&gt;
+00:08 CacheImplementer: info -- logger &lt;logging.Logger object at 0x7f90daf2d128&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[NumpyVectorSpace]" time="0.0014705657958984375"><system-err>00:08 |WARNING|NumpyVectorSpace: warn -- logger &lt;logging.Logger object at 0x7f91069d7fd0&gt;
+00:08 |ERROR|NumpyVectorSpace: error -- logger &lt;logging.Logger object at 0x7f91069d7fd0&gt;
+00:08 NumpyVectorSpace: info -- logger &lt;logging.Logger object at 0x7f91069d7fd0&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[BlockVectorSpace]" time="0.0011031627655029297"><system-err>00:08 |WARNING|BlockVectorSpace: warn -- logger &lt;logging.Logger object at 0x7f90f1d5cf98&gt;
+00:08 |ERROR|BlockVectorSpace: error -- logger &lt;logging.Logger object at 0x7f90f1d5cf98&gt;
+00:08 BlockVectorSpace: info -- logger &lt;logging.Logger object at 0x7f90f1d5cf98&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[ListVectorSpace]" time="0.0010797977447509766"><system-err>00:08 |WARNING|ListVectorSpace: warn -- logger &lt;logging.Logger object at 0x7f90e592b5c0&gt;
+00:08 |ERROR|ListVectorSpace: error -- logger &lt;logging.Logger object at 0x7f90e592b5c0&gt;
+00:08 ListVectorSpace: info -- logger &lt;logging.Logger object at 0x7f90e592b5c0&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[MPIVectorSpace]" time="0.0011060237884521484"><system-err>00:08 |WARNING|MPIVectorSpace: warn -- logger &lt;logging.Logger object at 0x7f90dae65550&gt;
+00:08 |ERROR|MPIVectorSpace: error -- logger &lt;logging.Logger object at 0x7f90dae65550&gt;
+00:08 MPIVectorSpace: info -- logger &lt;logging.Logger object at 0x7f90dae65550&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[OperatorBase]" time="0.0012009143829345703"><system-err>00:08 |WARNING|OperatorBase: warn -- logger &lt;logging.Logger object at 0x7f9106a1f7f0&gt;
+00:08 |ERROR|OperatorBase: error -- logger &lt;logging.Logger object at 0x7f9106a1f7f0&gt;
+00:08 OperatorBase: info -- logger &lt;logging.Logger object at 0x7f9106a1f7f0&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[RectDomain]" time="0.0011038780212402344"><system-err>00:08 |WARNING|RectDomain: warn -- logger &lt;logging.Logger object at 0x7f910577ea20&gt;
+00:08 |ERROR|RectDomain: error -- logger &lt;logging.Logger object at 0x7f910577ea20&gt;
+00:08 RectDomain: info -- logger &lt;logging.Logger object at 0x7f910577ea20&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[CylindricalDomain]" time="0.0014336109161376953"><system-err>00:08 |WARNING|CylindricalDomain: warn -- logger &lt;logging.Logger object at 0x7f910577b4a8&gt;
+00:08 |ERROR|CylindricalDomain: error -- logger &lt;logging.Logger object at 0x7f910577b4a8&gt;
+00:08 CylindricalDomain: info -- logger &lt;logging.Logger object at 0x7f910577b4a8&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[TorusDomain]" time="0.0010819435119628906"><system-err>00:08 |WARNING|TorusDomain: warn -- logger &lt;logging.Logger object at 0x7f910577b6a0&gt;
+00:08 |ERROR|TorusDomain: error -- logger &lt;logging.Logger object at 0x7f910577b6a0&gt;
+00:08 TorusDomain: info -- logger &lt;logging.Logger object at 0x7f910577b6a0&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[LineDomain]" time="0.0011012554168701172"><system-err>00:08 |WARNING|LineDomain: warn -- logger &lt;logging.Logger object at 0x7f910577ba90&gt;
+00:08 |ERROR|LineDomain: error -- logger &lt;logging.Logger object at 0x7f910577ba90&gt;
+00:08 LineDomain: info -- logger &lt;logging.Logger object at 0x7f910577ba90&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[CircleDomain]" time="0.001066446304321289"><system-err>00:08 |WARNING|CircleDomain: warn -- logger &lt;logging.Logger object at 0x7f910577bd68&gt;
+00:08 |ERROR|CircleDomain: error -- logger &lt;logging.Logger object at 0x7f910577bd68&gt;
+00:08 CircleDomain: info -- logger &lt;logging.Logger object at 0x7f910577bd68&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[PolygonalDomain]" time="0.0011887550354003906"><system-err>00:08 |WARNING|PolygonalDomain: warn -- logger &lt;logging.Logger object at 0x7f90e5ed9e10&gt;
+00:08 |ERROR|PolygonalDomain: error -- logger &lt;logging.Logger object at 0x7f90e5ed9e10&gt;
+00:08 PolygonalDomain: info -- logger &lt;logging.Logger object at 0x7f90e5ed9e10&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[FunctionBase]" time="0.0011556148529052734"><system-err>00:08 |WARNING|FunctionBase: warn -- logger &lt;logging.Logger object at 0x7f910577c9b0&gt;
+00:08 |ERROR|FunctionBase: error -- logger &lt;logging.Logger object at 0x7f910577c9b0&gt;
+00:08 FunctionBase: info -- logger &lt;logging.Logger object at 0x7f910577c9b0&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[CubicParameterSpace]" time="0.0011284351348876953"><system-err>00:08 |WARNING|CubicParameterSpace: warn -- logger &lt;logging.Logger object at 0x7f910407b4a8&gt;
+00:08 |ERROR|CubicParameterSpace: error -- logger &lt;logging.Logger object at 0x7f910407b4a8&gt;
+00:08 CubicParameterSpace: info -- logger &lt;logging.Logger object at 0x7f910407b4a8&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[ProjectionParameterFunctional]" time="0.0010943412780761719"><system-err>00:08 |WARNING|ProjectionParameterFunctional: warn -- logger &lt;logging.Logger object at 0x7f91040a60f0&gt;
+00:08 |ERROR|ProjectionParameterFunctional: error -- logger &lt;logging.Logger object at 0x7f91040a60f0&gt;
+00:08 ProjectionParameterFunctional: info -- logger &lt;logging.Logger object at 0x7f91040a60f0&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[GenericParameterFunctional]" time="0.0011322498321533203"><system-err>00:08 |WARNING|GenericParameterFunctional: warn -- logger &lt;logging.Logger object at 0x7f91040a6908&gt;
+00:08 |ERROR|GenericParameterFunctional: error -- logger &lt;logging.Logger object at 0x7f91040a6908&gt;
+00:08 GenericParameterFunctional: info -- logger &lt;logging.Logger object at 0x7f91040a6908&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[ProductParameterFunctional]" time="0.0010802745819091797"><system-err>00:08 |WARNING|ProductParameterFunctional: warn -- logger &lt;logging.Logger object at 0x7f91040a6f28&gt;
+00:08 |ERROR|ProductParameterFunctional: error -- logger &lt;logging.Logger object at 0x7f91040a6f28&gt;
+00:08 ProductParameterFunctional: info -- logger &lt;logging.Logger object at 0x7f91040a6f28&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[ImplicitEulerTimeStepper]" time="0.0011038780212402344"><system-err>00:08 |WARNING|ImplicitEulerTimeStepper: warn -- logger &lt;logging.Logger object at 0x7f90e5f74ac8&gt;
+00:08 |ERROR|ImplicitEulerTimeStepper: error -- logger &lt;logging.Logger object at 0x7f90e5f74ac8&gt;
+00:08 ImplicitEulerTimeStepper: info -- logger &lt;logging.Logger object at 0x7f90e5f74ac8&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[ExplicitEulerTimeStepper]" time="0.0013537406921386719"><system-err>00:08 |WARNING|ExplicitEulerTimeStepper: warn -- logger &lt;logging.Logger object at 0x7f90e5f74ef0&gt;
+00:08 |ERROR|ExplicitEulerTimeStepper: error -- logger &lt;logging.Logger object at 0x7f90e5f74ef0&gt;
+00:08 ExplicitEulerTimeStepper: info -- logger &lt;logging.Logger object at 0x7f90e5f74ef0&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[LaxFriedrichsFlux]" time="0.0011234283447265625"><system-err>00:08 |WARNING|LaxFriedrichsFlux: warn -- logger &lt;logging.Logger object at 0x7f90e5f11f98&gt;
+00:08 |ERROR|LaxFriedrichsFlux: error -- logger &lt;logging.Logger object at 0x7f90e5f11f98&gt;
+00:08 LaxFriedrichsFlux: info -- logger &lt;logging.Logger object at 0x7f90e5f11f98&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[SimplifiedEngquistOsherFlux]" time="0.0010609626770019531"><system-err>00:08 |WARNING|SimplifiedEngquistOsherFlux: warn -- logger &lt;logging.Logger object at 0x7f90e5f0d2b0&gt;
+00:08 |ERROR|SimplifiedEngquistOsherFlux: error -- logger &lt;logging.Logger object at 0x7f90e5f0d2b0&gt;
+00:08 SimplifiedEngquistOsherFlux: info -- logger &lt;logging.Logger object at 0x7f90e5f0d2b0&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[EngquistOsherFlux]" time="0.0011353492736816406"><system-err>00:08 |WARNING|EngquistOsherFlux: warn -- logger &lt;logging.Logger object at 0x7f90e5f0d5c0&gt;
+00:08 |ERROR|EngquistOsherFlux: error -- logger &lt;logging.Logger object at 0x7f90e5f0d5c0&gt;
+00:08 EngquistOsherFlux: info -- logger &lt;logging.Logger object at 0x7f90e5f0d5c0&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[NumpyVectorArray]" time="0.0010683536529541016"><system-err>00:08 |WARNING|NumpyVectorArray: warn -- logger &lt;logging.Logger object at 0x7f91069d7710&gt;
+00:08 |ERROR|NumpyVectorArray: error -- logger &lt;logging.Logger object at 0x7f91069d7710&gt;
+00:08 NumpyVectorArray: info -- logger &lt;logging.Logger object at 0x7f91069d7710&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[BlockVectorArray]" time="0.0011475086212158203"><system-err>00:08 |WARNING|BlockVectorArray: warn -- logger &lt;logging.Logger object at 0x7f90f1cd0d30&gt;
+00:08 |ERROR|BlockVectorArray: error -- logger &lt;logging.Logger object at 0x7f90f1cd0d30&gt;
+00:08 BlockVectorArray: info -- logger &lt;logging.Logger object at 0x7f90f1cd0d30&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[ListVectorArray]" time="0.0014476776123046875"><system-err>00:08 |WARNING|ListVectorArray: warn -- logger &lt;logging.Logger object at 0x7f90e5599668&gt;
+00:08 |ERROR|ListVectorArray: error -- logger &lt;logging.Logger object at 0x7f90e5599668&gt;
+00:08 ListVectorArray: info -- logger &lt;logging.Logger object at 0x7f90e5599668&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[MPIVectorArray]" time="0.0011026859283447266"><system-err>00:08 |WARNING|MPIVectorArray: warn -- logger &lt;logging.Logger object at 0x7f90dae54940&gt;
+00:08 |ERROR|MPIVectorArray: error -- logger &lt;logging.Logger object at 0x7f90dae54940&gt;
+00:08 MPIVectorArray: info -- logger &lt;logging.Logger object at 0x7f90dae54940&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[PreAssembleRules]" time="0.0011301040649414062"><system-err>00:08 |WARNING|PreAssembleRules: warn -- logger &lt;logging.Logger object at 0x7f90e5ed2320&gt;
+00:08 |ERROR|PreAssembleRules: error -- logger &lt;logging.Logger object at 0x7f90e5ed2320&gt;
+00:08 PreAssembleRules: info -- logger &lt;logging.Logger object at 0x7f90e5ed2320&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[ProjectRules]" time="0.0011074542999267578"><system-err>00:08 |WARNING|ProjectRules: warn -- logger &lt;logging.Logger object at 0x7f90e5874b00&gt;
+00:08 |ERROR|ProjectRules: error -- logger &lt;logging.Logger object at 0x7f90e5874b00&gt;
+00:08 ProjectRules: info -- logger &lt;logging.Logger object at 0x7f90e5874b00&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[ProjectToSubbasisRules]" time="0.001150369644165039"><system-err>00:08 |WARNING|ProjectToSubbasisRules: warn -- logger &lt;logging.Logger object at 0x7f90e5874898&gt;
+00:08 |ERROR|ProjectToSubbasisRules: error -- logger &lt;logging.Logger object at 0x7f90e5874898&gt;
+00:08 ProjectToSubbasisRules: info -- logger &lt;logging.Logger object at 0x7f90e5874898&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[ToMatrixRules]" time="0.0011034011840820312"><system-err>00:08 |WARNING|ToMatrixRules: warn -- logger &lt;logging.Logger object at 0x7f90dd1a0860&gt;
+00:08 |ERROR|ToMatrixRules: error -- logger &lt;logging.Logger object at 0x7f90dd1a0860&gt;
+00:08 ToMatrixRules: info -- logger &lt;logging.Logger object at 0x7f90dd1a0860&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[CollectOperatorRangeRules]" time="0.0014295578002929688"><system-err>00:08 |WARNING|CollectOperatorRangeRules: warn -- logger &lt;logging.Logger object at 0x7f90daf43278&gt;
+00:08 |ERROR|CollectOperatorRangeRules: error -- logger &lt;logging.Logger object at 0x7f90daf43278&gt;
+00:08 CollectOperatorRangeRules: info -- logger &lt;logging.Logger object at 0x7f90daf43278&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[CollectVectorRangeRules]" time="0.0010962486267089844"><system-err>00:08 |WARNING|CollectVectorRangeRules: warn -- logger &lt;logging.Logger object at 0x7f90daf436a0&gt;
+00:08 |ERROR|CollectVectorRangeRules: error -- logger &lt;logging.Logger object at 0x7f90daf436a0&gt;
+00:08 CollectVectorRangeRules: info -- logger &lt;logging.Logger object at 0x7f90daf436a0&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[CopyOnWriteVector]" time="0.0010800361633300781"><system-err>00:08 |WARNING|CopyOnWriteVector: warn -- logger &lt;logging.Logger object at 0x7f90e5599e48&gt;
+00:08 |ERROR|CopyOnWriteVector: error -- logger &lt;logging.Logger object at 0x7f90e5599e48&gt;
+00:08 CopyOnWriteVector: info -- logger &lt;logging.Logger object at 0x7f90e5599e48&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[AllDirichletBoundaryInfo]" time="0.0011258125305175781"><system-err>00:08 |WARNING|AllDirichletBoundaryInfo: warn -- logger &lt;logging.Logger object at 0x7f90dafbb5f8&gt;
+00:08 |ERROR|AllDirichletBoundaryInfo: error -- logger &lt;logging.Logger object at 0x7f90dafbb5f8&gt;
+00:08 AllDirichletBoundaryInfo: info -- logger &lt;logging.Logger object at 0x7f90dafbb5f8&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[StupidImplementer]" time="0.0010783672332763672"><system-err>00:08 |WARNING|StupidImplementer: warn -- logger &lt;logging.Logger object at 0x7f90db0c7a90&gt;
+00:08 |ERROR|StupidImplementer: error -- logger &lt;logging.Logger object at 0x7f90db0c7a90&gt;
+00:08 StupidImplementer: info -- logger &lt;logging.Logger object at 0x7f90db0c7a90&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[AverageImplementer0]" time="0.0011260509490966797"><system-err>00:08 |WARNING|AverageImplementer: warn -- logger &lt;logging.Logger object at 0x7f90db469b38&gt;
+00:08 |ERROR|AverageImplementer: error -- logger &lt;logging.Logger object at 0x7f90db469b38&gt;
+00:08 AverageImplementer: info -- logger &lt;logging.Logger object at 0x7f90db469b38&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[FailImplementer]" time="0.0011372566223144531"><system-err>00:08 |WARNING|FailImplementer: warn -- logger &lt;logging.Logger object at 0x7f90daf2d898&gt;
+00:08 |ERROR|FailImplementer: error -- logger &lt;logging.Logger object at 0x7f90daf2d898&gt;
+00:08 FailImplementer: info -- logger &lt;logging.Logger object at 0x7f90daf2d898&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[AverageImplementer1]" time="0.0010814666748046875"><system-err>00:08 |WARNING|AverageImplementer: warn -- logger &lt;logging.Logger object at 0x7f90db469b38&gt;
+00:08 |ERROR|AverageImplementer: error -- logger &lt;logging.Logger object at 0x7f90db469b38&gt;
+00:08 AverageImplementer: info -- logger &lt;logging.Logger object at 0x7f90db469b38&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[DummyPool]" time="0.0011436939239501953"><system-err>00:08 |WARNING|DummyPool: warn -- logger &lt;logging.Logger object at 0x7f90daf1bd68&gt;
+00:08 |ERROR|DummyPool: error -- logger &lt;logging.Logger object at 0x7f90daf1bd68&gt;
+00:08 DummyPool: info -- logger &lt;logging.Logger object at 0x7f90daf1bd68&gt;
+</system-err></testcase><testcase classname="src.pymortests.core.logger" file="src/pymortests/core/logger.py" line="20" name="test_logclass[WorkerPoolBase]" time="0.0011425018310546875"><system-err>00:08 |WARNING|WorkerPoolBase: warn -- logger &lt;logging.Logger object at 0x7f90dae75ac8&gt;
+00:08 |ERROR|WorkerPoolBase: error -- logger &lt;logging.Logger object at 0x7f90dae75ac8&gt;
+00:08 WorkerPoolBase: info -- logger &lt;logging.Logger object at 0x7f90dae75ac8&gt;
+</system-err></testcase></testsuite>
