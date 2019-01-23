@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="38" failures="0" name="pytest" skips="0" tests="38" time="10.634"><testcase classname="" file="src/pymortests/affine_grid.py" name="src.pymortests.affine_grid" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/affine_grid.py:9: in &lt;module&gt;
+    from pymor.grids.interfaces import ReferenceElementInterface
+src/pymor/grids/interfaces.py:7: in &lt;module&gt;
+    from pymor.core.interfaces import abstractmethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/analyticalproblem.py" name="src.pymortests.analyticalproblem" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/analyticalproblem.py:4: in &lt;module&gt;
+    from pymortests.base import runmodule
+E     File &quot;/src/src/pymortests/base.py&quot;, line 58
+E       cname = f&apos;DynamicTest_{Type.__name__}_{TestCase.__name__.replace(&apos;Interface&apos;, &apos;&apos;)}&apos;
+E                                                                                 ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/base.py" name="src.pymortests.base" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+E     File &quot;/src/src/pymortests/base.py&quot;, line 58
+E       cname = f&apos;DynamicTest_{Type.__name__}_{TestCase.__name__.replace(&apos;Interface&apos;, &apos;&apos;)}&apos;
+E                                                                                 ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/benchmarks.py" name="src.pymortests.benchmarks" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/benchmarks.py:5: in &lt;module&gt;
+    from pymortests.base import runmodule
+E     File &quot;/src/src/pymortests/base.py&quot;, line 58
+E       cname = f&apos;DynamicTest_{Type.__name__}_{TestCase.__name__.replace(&apos;Interface&apos;, &apos;&apos;)}&apos;
+E                                                                                 ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/block.py" name="src.pymortests.block" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/block.py:8: in &lt;module&gt;
+    from pymor.operators.numpy import NumpyMatrixOperator
+src/pymor/operators/numpy.py:24: in &lt;module&gt;
+    from pymor.core.interfaces import abstractmethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/cache.py" name="src.pymortests.cache" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/cache.py:11: in &lt;module&gt;
+    from pymor.core import cache
+src/pymor/core/cache.py:77: in &lt;module&gt;
+    from pymor.core.interfaces import ImmutableInterface, generate_sid
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/complex_values.py" name="src.pymortests.complex_values" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/complex_values.py:7: in &lt;module&gt;
+    from pymor.operators.numpy import NumpyMatrixOperator
+src/pymor/operators/numpy.py:24: in &lt;module&gt;
+    from pymor.core.interfaces import abstractmethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/demos.py" name="src.pymortests.demos" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+E     File &quot;/src/src/pymortests/demos.py&quot;, line 260
+E       return [f&quot;{a}:&apos;{&quot;&quot;&quot; &quot;&quot;&quot;.join(str(s) for s in b)}&apos;&quot;.replace(&apos;pymordemos.&apos;,&apos;&apos;) for a,b in demo_args]
+E   
+E   
+E   @pytest.fixture(params=DEMO_ARGS, ids=_demo_ids(DEMO_ARGS))
+E   def demo_args(request):
+E       _skip_if_no_solver(request.param)
+E       return request.param
+E   
+E   
+E   @pytest.fixture(params=THERMALBLOCK_ARGS, ids=_demo_ids(THERMALBLOCK_ARGS))
+E   def thermalblock_args(request):
+E       _skip_if_no_solver(request.param)
+E       return request.param
+E   
+E   
+E   def _test_demo(demo):
+E       import sys
+E       sys._called_from_test = True
+E   
+E       def nop(*args, **kwargs):
+E           pass
+E   
+E       try:
+E           from matplotlib import pyplot
+E           pyplot.show = nop
+E       except ImportError:
+E           pass
+E       try:
+E           import dolfin
+E           dolfin.plot = nop
+E       except ImportError:
+E           pass
+E   
+E       result = None
+E       try:
+E           result = demo()
+E       except QtMissing:
+E           pytest.xfail(&quot;Qt missing&quot;)
+E       finally:
+E           stop_gui_processes()
+E           from pymor.parallel.default import _cleanup
+E           _cleanup()
+E   
+E       return result
+E   
+E   
+E   def test_demos(demo_args):
+E       module, args = demo_args
+E       result = _test_demo(lambda: _run_module(module, args))
+E       assert result is not None
+E   
+E   
+E   def test_analyze_pickle1():
+E       d = mkdtemp()
+E       try:
+E           test_demos((&apos;pymordemos.thermalblock&apos;, [&apos;--pickle=&apos; + os.path.join(d, &apos;data&apos;), 2, 2, 2, 10]))
+E           test_demos((&apos;pymordemos.analyze_pickle&apos;,
+E                      [&apos;histogram&apos;, &apos;--error-norm=h1_0_semi&apos;, os.path.join(d, &apos;data_reduced&apos;), 10]))
+E       finally:
+E           shutil.rmtree(d)
+E   
+E   
+E   def test_analyze_pickle2():
+E       d = mkdtemp()
+E       try:
+E           test_demos((&apos;pymordemos.thermalblock&apos;, [&apos;--pickle=&apos; + os.path.join(d, &apos;data&apos;), 2, 2, 2, 10]))
+E           test_demos((&apos;pymordemos.analyze_pickle&apos;,
+E                      [&apos;histogram&apos;, &apos;--detailed=&apos; + os.path.join(d, &apos;data_detailed&apos;),
+E                       os.path.join(d, &apos;data_reduced&apos;), 10]))
+E       finally:
+E           shutil.rmtree(d)
+E   
+E   
+E   def test_analyze_pickle3():
+E       d = mkdtemp()
+E       try:
+E           test_demos((&apos;pymordemos.thermalblock&apos;, [&apos;--pickle=&apos; + os.path.join(d, &apos;data&apos;), 2, 2, 2, 10]))
+E           test_demos((&apos;pymordemos.analyze_pickle&apos;,
+E                      [&apos;convergence&apos;, &apos;--detailed=&apos; + os.path.join(d, &apos;data_detailed&apos;),
+E                       &apos;--error-norm=h1_0_semi&apos;, os.path.join(d, &apos;data_reduced&apos;), 10]))
+E       finally:
+E           shutil.rmtree(d)
+E   
+E   
+E   def test_analyze_pickle4():
+E       d = mkdtemp()
+E       try:
+E           test_demos((&apos;pymordemos.thermalblock&apos;, [&apos;--pickle=&apos; + os.path.join(d, &apos;data&apos;), 2, 2, 2, 10]))
+E           test_demos((&apos;pymordemos.analyze_pickle&apos;,
+E                      [&apos;convergence&apos;, &apos;--detailed=&apos; + os.path.join(d, &apos;data_detailed&apos;),
+E                       os.path.join(d, &apos;data_reduced&apos;), 10]))
+E       finally:
+E           shutil.rmtree(d)
+E   
+E   @pytest.mark.skipif(is_windows_platform(), reason=&apos;hangs indefinitely&apos;)
+E   def test_thermalblock_ipython(demo_args):
+E       if demo_args[0] != &apos;pymordemos.thermalblock&apos;:
+E           return
+E       from pymor.tools import mpi
+E       if mpi.parallel:  # simply running &apos;ipcluster start&apos; (without any profile) does not seem to work
+E           return        # when running under mpirun, so we do not test this combination for now
+E       try:
+E           test_demos((demo_args[0], [&apos;--ipython-engines=2&apos;] + demo_args[1]))
+E       finally:
+E           import time     # there seems to be no way to shutdown the IPyhton cluster s.t. a new
+E           time.sleep(10)  # cluster can be started directly afterwards, so we have to wait ...
+E   
+E   
+E   def test_thermalblock_results(thermalblock_args):
+E       from pymordemos import thermalblock
+E       results = _test_demo(lambda: thermalblock.main(list(map(str, thermalblock_args[1]))))
+E       # due to the symmetry of the problem and the random test parameters, the estimated
+E       # error may change a lot
+E       # fenics varies more than others between MPI/serial
+E       first_tolerance = (1e-13, 3.5e-6) if &apos;--fenics&apos; in thermalblock_args[1] else (1e-13, 1e-7)
+E       check_results(&apos;test_thermalblock_results&apos;, thermalblock_args[1], results,
+E                     first_tolerance, &apos;basis_sizes&apos;, &apos;norms&apos;, &apos;max_norms&apos;,
+E                     (1e-13, 4.), &apos;errors&apos;, &apos;max_errors&apos;, &apos;rel_errors&apos;, &apos;max_rel_errors&apos;,
+E                     &apos;estimates&apos;, &apos;max_estimates&apos;, &apos;effectivities&apos;, &apos;min_effectivities&apos;, &apos;max_effectivities&apos;, &apos;errors&apos;)
+E   
+E   
+E   def test_burgers_ei_results():
+E       from pymordemos import burgers_ei
+E       args = list(map(str, [1, 2, 10, 100, 10, 30]))
+E       ei_results, greedy_results = _test_demo(lambda: burgers_ei.main(args))
+E       ei_results[&apos;greedy_max_errs&apos;] = greedy_results[&apos;max_errs&apos;]
+E       check_results(&apos;test_burgers_ei_results&apos;, args, ei_results,
+E                     (1e-13, 1e-7), &apos;errors&apos;, &apos;triangularity_errors&apos;, &apos;greedy_max_errs&apos;)
+E   
+E   
+E   def test_parabolic_mor_results():
+E       from pymordemos import parabolic_mor
+E       args = [&apos;pymor&apos;, &apos;greedy&apos;, 5, 20, 3]
+E       results = _test_demo(lambda: parabolic_mor.main(*args))
+E       check_results(&apos;test_parabolic_mor_results&apos;, args, results,
+E                     (1e-13, 1e-7), &apos;basis_sizes&apos;, &apos;norms&apos;, &apos;max_norms&apos;,
+E                     (1e-13, 4.), &apos;errors&apos;, &apos;max_errors&apos;, &apos;rel_errors&apos;, &apos;max_rel_errors&apos;,
+E                     &apos;estimates&apos;, &apos;max_estimates&apos;, &apos;effectivities&apos;, &apos;min_effectivities&apos;, &apos;max_effectivities&apos;, &apos;errors&apos;)
+E   
+E   if __name__ == &quot;__main__&quot;:
+E       runmodule(filename=__file__)
+E                                                                                                         
+E   
+E   
+E                                                              
+E                          
+E                                        
+E                           
+E   
+E   
+E                                                                              
+E                                  
+E                                        
+E                           
+E   
+E   
+E                        
+E                 
+E                                   
+E   
+E                                
+E               
+E   
+E           
+E                                        
+E                            
+E                          
+E               
+E           
+E                        
+E                            
+E                          
+E               
+E   
+E                    
+E           
+E                          
+E                        
+E                                     
+E               
+E                               
+E                                                      
+E                     
+E   
+E                    
+E   
+E   
+E                             
+E                               
+E                                                             
+E                                
+E   
+E   
+E                              
+E                    
+E           
+E                                                                                                        
+E                                                   
+E                                                                                                    
+E               
+E                           
+E   
+E   
+E                              
+E                    
+E           
+E                                                                                                        
+E                                                   
+E                                                                                     
+E                                                             
+E               
+E                           
+E   
+E   
+E                              
+E                    
+E           
+E                                                                                                        
+E                                                   
+E                                                                                       
+E                                                                                       
+E               
+E                           
+E   
+E   
+E                              
+E                    
+E           
+E                                                                                                        
+E                                                   
+E                                                                                       
+E                                                             
+E               
+E                           
+E   
+E                                                                          
+E                                            
+E                                                    
+E                 
+E                                  
+E                                                                                                       
+E                                                                                                
+E           
+E                                                                             
+E               
+E                                                                                                
+E                                                                                               
+E   
+E   
+E                                                    
+E                                          
+E                                                                                            
+E                                                                                         
+E                               
+E                                                          
+E                                                                                                 
+E                                                                                
+E                                                                          
+E                                                                                         
+E                                                                                                                       
+E   
+E   
+E                                 
+E                                        
+E                                                     
+E                                                                             
+E                                                                 
+E                                                                 
+E                                                                                        
+E   
+E   
+E                                    
+E                                           
+E                                           
+E                                                              
+E                                                                 
+E                                                                        
+E                                                                                         
+E                                                                                                                       
+E   
+E                             
+E                                  ^
+E   SyntaxError: EOF while scanning triple-quoted string literal</error></testcase><testcase classname="" file="src/pymortests/discretization.py" name="src.pymortests.discretization" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/discretization.py:7: in &lt;module&gt;
+    from pymor.algorithms.basic import almost_equal
+src/pymor/algorithms/basic.py:11: in &lt;module&gt;
+    from pymor.operators.constructions import induced_norm
+src/pymor/operators/constructions.py:15: in &lt;module&gt;
+    from pymor.core.interfaces import ImmutableInterface
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/function.py" name="src.pymortests.function" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/function.py:9: in &lt;module&gt;
+    from pymor.functions.basic import ConstantFunction, GenericFunction
+src/pymor/functions/basic.py:10: in &lt;module&gt;
+    from pymor.functions.interfaces import FunctionInterface
+src/pymor/functions/interfaces.py:5: in &lt;module&gt;
+    from pymor.core.interfaces import ImmutableInterface, abstractmethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/grid.py" name="src.pymortests.grid" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/grid.py:12: in &lt;module&gt;
+    from pymor.gui.qt import stop_gui_processes
+src/pymor/gui/qt.py:21: in &lt;module&gt;
+    from pymor.gui.gl import GLPatchWidget, ColorBarWidget
+src/pymor/gui/gl.py:26: in &lt;module&gt;
+    from pymor.grids.constructions import flatten_grid
+src/pymor/grids/constructions.py:9: in &lt;module&gt;
+    from pymor.grids.rect import RectGrid
+src/pymor/grids/rect.py:7: in &lt;module&gt;
+    from pymor.grids.interfaces import AffineGridWithOrthogonalCentersInterface
+src/pymor/grids/interfaces.py:7: in &lt;module&gt;
+    from pymor.core.interfaces import abstractmethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/gui.py" name="src.pymortests.gui" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/gui.py:5: in &lt;module&gt;
+    from pymor.grids.oned import OnedGrid
+src/pymor/grids/oned.py:8: in &lt;module&gt;
+    from pymor.grids.interfaces import AffineGridWithOrthogonalCentersInterface
+src/pymor/grids/interfaces.py:7: in &lt;module&gt;
+    from pymor.core.interfaces import abstractmethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/la.py" name="src.pymortests.la" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/la.py:7: in &lt;module&gt;
+    from pymor.operators.constructions import induced_norm
+src/pymor/operators/constructions.py:15: in &lt;module&gt;
+    from pymor.core.interfaces import ImmutableInterface
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/lyapunov.py" name="src.pymortests.lyapunov" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/lyapunov.py:11: in &lt;module&gt;
+    from pymor.algorithms.lyapunov import solve_lyap_lrcf, solve_lyap_dense
+src/pymor/algorithms/lyapunov.py:10: in &lt;module&gt;
+    from pymor.operators.interfaces import OperatorInterface
+src/pymor/operators/interfaces.py:5: in &lt;module&gt;
+    from pymor.core.interfaces import ImmutableInterface, abstractmethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/operators.py" name="src.pymortests.operators" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/operators.py:8: in &lt;module&gt;
+    from pymor.algorithms.basic import almost_equal
+src/pymor/algorithms/basic.py:11: in &lt;module&gt;
+    from pymor.operators.constructions import induced_norm
+src/pymor/operators/constructions.py:15: in &lt;module&gt;
+    from pymor.core.interfaces import ImmutableInterface
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/parameters.py" name="src.pymortests.parameters" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/parameters.py:5: in &lt;module&gt;
+    from pymor.parameters.spaces import CubicParameterSpace
+src/pymor/parameters/spaces.py:9: in &lt;module&gt;
+    from pymor.parameters.base import Parameter, ParameterType
+src/pymor/parameters/base.py:42: in &lt;module&gt;
+    from pymor.core.interfaces import generate_sid
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/pickling.py" name="src.pymortests.pickling" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/pickling.py:10: in &lt;module&gt;
+    from pymor.core.interfaces import BasicInterface
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/playground.py" name="src.pymortests.playground" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/playground.py:10: in &lt;module&gt;
+    from pymortests.base import runmodule
+E     File &quot;/src/src/pymortests/base.py&quot;, line 58
+E       cname = f&apos;DynamicTest_{Type.__name__}_{TestCase.__name__.replace(&apos;Interface&apos;, &apos;&apos;)}&apos;
+E                                                                                 ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/riccati.py" name="src.pymortests.riccati" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/riccati.py:8: in &lt;module&gt;
+    from pymor.algorithms.riccati import solve_ricc_lrcf, solve_pos_ricc_lrcf
+src/pymor/algorithms/riccati.py:7: in &lt;module&gt;
+    from pymor.algorithms.lyapunov import mat_eqn_sparse_min_size
+src/pymor/algorithms/lyapunov.py:10: in &lt;module&gt;
+    from pymor.operators.interfaces import OperatorInterface
+src/pymor/operators/interfaces.py:5: in &lt;module&gt;
+    from pymor.core.interfaces import ImmutableInterface, abstractmethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/solver.py" name="src.pymortests.solver" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/solver.py:11: in &lt;module&gt;
+    from pymor.operators.basic import OperatorBase
+src/pymor/operators/basic.py:11: in &lt;module&gt;
+    from pymor.operators.interfaces import OperatorInterface
+src/pymor/operators/interfaces.py:5: in &lt;module&gt;
+    from pymor.core.interfaces import ImmutableInterface, abstractmethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/sylvester.py" name="src.pymortests.sylvester" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/sylvester.py:9: in &lt;module&gt;
+    from pymor.algorithms.sylvester import solve_sylv_schur
+src/pymor/algorithms/sylvester.py:7: in &lt;module&gt;
+    from pymor.algorithms.to_matrix import to_matrix
+src/pymor/algorithms/to_matrix.py:10: in &lt;module&gt;
+    from pymor.algorithms.rules import RuleTable, match_class
+src/pymor/algorithms/rules.py:8: in &lt;module&gt;
+    from pymor.core.interfaces import BasicInterface, UberMeta, abstractmethod, classinstancemethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/to_matrix.py" name="src.pymortests.to_matrix" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/to_matrix.py:9: in &lt;module&gt;
+    from pymor.algorithms.to_matrix import to_matrix
+src/pymor/algorithms/to_matrix.py:10: in &lt;module&gt;
+    from pymor.algorithms.rules import RuleTable, match_class
+src/pymor/algorithms/rules.py:8: in &lt;module&gt;
+    from pymor.core.interfaces import BasicInterface, UberMeta, abstractmethod, classinstancemethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/tools.py" name="src.pymortests.tools" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/tools.py:11: in &lt;module&gt;
+    from pymortests.base import TestInterface, runmodule
+E     File &quot;/src/src/pymortests/base.py&quot;, line 58
+E       cname = f&apos;DynamicTest_{Type.__name__}_{TestCase.__name__.replace(&apos;Interface&apos;, &apos;&apos;)}&apos;
+E                                                                                 ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/vectorarray.py" name="src.pymortests.vectorarray" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/vectorarray.py:11: in &lt;module&gt;
+    from pymor.algorithms.basic import almost_equal
+src/pymor/algorithms/basic.py:11: in &lt;module&gt;
+    from pymor.operators.constructions import induced_norm
+src/pymor/operators/constructions.py:15: in &lt;module&gt;
+    from pymor.core.interfaces import ImmutableInterface
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/algorithms/basic.py" name="src.pymortests.algorithms.basic" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/algorithms/basic.py:10: in &lt;module&gt;
+    from pymor.algorithms.basic import almost_equal, project_array, relative_error
+src/pymor/algorithms/basic.py:11: in &lt;module&gt;
+    from pymor.operators.constructions import induced_norm
+src/pymor/operators/constructions.py:15: in &lt;module&gt;
+    from pymor.core.interfaces import ImmutableInterface
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/algorithms/gram_schmidt.py" name="src.pymortests.algorithms.gram_schmidt" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/algorithms/gram_schmidt.py:7: in &lt;module&gt;
+    from pymor.algorithms.basic import almost_equal
+src/pymor/algorithms/basic.py:11: in &lt;module&gt;
+    from pymor.operators.constructions import induced_norm
+src/pymor/operators/constructions.py:15: in &lt;module&gt;
+    from pymor.core.interfaces import ImmutableInterface
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/algorithms/stuff.py" name="src.pymortests.algorithms.stuff" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/algorithms/stuff.py:8: in &lt;module&gt;
+    from pymortests.base import runmodule, MonomOperator
+E     File &quot;/src/src/pymortests/base.py&quot;, line 58
+E       cname = f&apos;DynamicTest_{Type.__name__}_{TestCase.__name__.replace(&apos;Interface&apos;, &apos;&apos;)}&apos;
+E                                                                                 ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/core/dummies.py" name="src.pymortests.core.dummies" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/core/dummies.py:5: in &lt;module&gt;
+    from pymor.core.interfaces import (BasicInterface, abstractmethod)
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/core/interface.py" name="src.pymortests.core.interface" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/core/interface.py:8: in &lt;module&gt;
+    from pymor.core.interfaces import (ImmutableInterface, abstractstaticmethod, abstractclassmethod)
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/core/logger.py" name="src.pymortests.core.logger" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/core/logger.py:8: in &lt;module&gt;
+    from pymortests.base import (runmodule,)
+E     File &quot;/src/src/pymortests/base.py&quot;, line 58
+E       cname = f&apos;DynamicTest_{Type.__name__}_{TestCase.__name__.replace(&apos;Interface&apos;, &apos;&apos;)}&apos;
+E                                                                                 ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/fixtures/analyticalproblem.py" name="src.pymortests.fixtures.analyticalproblem" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/analyticalproblem.py:7: in &lt;module&gt;
+    from pymor.domaindescriptions.basic import RectDomain
+E     File &quot;/src/src/pymor/domaindescriptions/basic.py&quot;, line 199
+E       return f&apos;TorusDomain({str(self.domain).replace(&apos;\n&apos;, &apos;,&apos;)})&apos;
+E                                                                  ^
+E   SyntaxError: unexpected character after line continuation character</error></testcase><testcase classname="" file="src/pymortests/fixtures/discretization.py" name="src.pymortests.fixtures.discretization" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/discretization.py:10: in &lt;module&gt;
+    from pymor.discretizers.cg import discretize_stationary_cg
+src/pymor/discretizers/cg.py:7: in &lt;module&gt;
+    from pymor.algorithms.timestepping import ExplicitEulerTimeStepper, ImplicitEulerTimeStepper
+src/pymor/algorithms/timestepping.py:21: in &lt;module&gt;
+    from pymor.core.interfaces import ImmutableInterface, abstractmethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/fixtures/function.py" name="src.pymortests.fixtures.function" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/function.py:9: in &lt;module&gt;
+    from pymor.functions.basic import ConstantFunction, GenericFunction, ExpressionFunction
+src/pymor/functions/basic.py:10: in &lt;module&gt;
+    from pymor.functions.interfaces import FunctionInterface
+src/pymor/functions/interfaces.py:5: in &lt;module&gt;
+    from pymor.core.interfaces import ImmutableInterface, abstractmethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/fixtures/generic.py" name="src.pymortests.fixtures.generic" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/generic.py:5: in &lt;module&gt;
+    from pymor.core.interfaces import BasicInterface
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/fixtures/grid.py" name="src.pymortests.fixtures.grid" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/grid.py:11: in &lt;module&gt;
+    from pymor.grids.oned import OnedGrid
+src/pymor/grids/oned.py:8: in &lt;module&gt;
+    from pymor.grids.interfaces import AffineGridWithOrthogonalCentersInterface
+src/pymor/grids/interfaces.py:7: in &lt;module&gt;
+    from pymor.core.interfaces import abstractmethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/fixtures/operator.py" name="src.pymortests.fixtures.operator" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/operator.py:8: in &lt;module&gt;
+    from pymor.operators.numpy import NumpyMatrixOperator
+src/pymor/operators/numpy.py:24: in &lt;module&gt;
+    from pymor.core.interfaces import abstractmethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/fixtures/parameter.py" name="src.pymortests.fixtures.parameter" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/parameter.py:7: in &lt;module&gt;
+    from pymor.parameters.base import Parameter
+src/pymor/parameters/base.py:42: in &lt;module&gt;
+    from pymor.core.interfaces import generate_sid
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/fixtures/vectorarray.py" name="src.pymortests.fixtures.vectorarray" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/vectorarray.py:10: in &lt;module&gt;
+    from pymor.vectorarrays.block import BlockVectorSpace
+src/pymor/vectorarrays/block.py:9: in &lt;module&gt;
+    from pymor.core.interfaces import classinstancemethod
+E     File &quot;/src/src/pymor/core/interfaces.py&quot;, line 126
+E       cls._logger = logger.getLogger(f&apos;{cls.__module__.replace(&apos;__main__&apos;, &apos;pymor&apos;)}.{name}&apos;)
+E                                                                        ^
+E   SyntaxError: invalid syntax</error></testcase></testsuite>
