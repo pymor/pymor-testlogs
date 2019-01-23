@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="8" failures="0" name="pytest" skips="0" tests="8" time="11.721"><testcase classname="" file="src/pymortests/analyticalproblem.py" name="src.pymortests.analyticalproblem" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/analyticalproblem.py:5: in &lt;module&gt;
+    from pymortests.fixtures.analyticalproblem import analytical_problem, picklable_analytical_problem
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/analyticalproblem.py:7: in &lt;module&gt;
+    from pymor.domaindescriptions.basic import RectDomain
+E     File &quot;/src/src/pymor/domaindescriptions/basic.py&quot;, line 199
+E       return f&apos;TorusDomain({str(self.domain).replace(&quot;\n&quot;, &quot;,&quot;)})&apos;
+E             ^
+E   SyntaxError: f-string expression part cannot include a backslash</error></testcase><testcase classname="" file="src/pymortests/demos.py" name="src.pymortests.demos" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+E     File &quot;/src/src/pymortests/demos.py&quot;, line 260
+E       return [f&quot;{a}:&apos;{&quot;&quot;&quot; &quot;&quot;&quot;.join(str(s) for s in b)}&apos;&quot;.replace(&apos;pymordemos.&apos;,&apos;&apos;) for a,b in demo_args]
+E   
+E   
+E   @pytest.fixture(params=DEMO_ARGS, ids=_demo_ids(DEMO_ARGS))
+E   def demo_args(request):
+E       _skip_if_no_solver(request.param)
+E       return request.param
+E   
+E   
+E   @pytest.fixture(params=THERMALBLOCK_ARGS, ids=_demo_ids(THERMALBLOCK_ARGS))
+E   def thermalblock_args(request):
+E       _skip_if_no_solver(request.param)
+E       return request.param
+E   
+E   
+E   def _test_demo(demo):
+E       import sys
+E       sys._called_from_test = True
+E   
+E       def nop(*args, **kwargs):
+E           pass
+E   
+E       try:
+E           from matplotlib import pyplot
+E           pyplot.show = nop
+E       except ImportError:
+E           pass
+E       try:
+E           import dolfin
+E           dolfin.plot = nop
+E       except ImportError:
+E           pass
+E   
+E       result = None
+E       try:
+E           result = demo()
+E       except QtMissing:
+E           pytest.xfail(&quot;Qt missing&quot;)
+E       finally:
+E           stop_gui_processes()
+E           from pymor.parallel.default import _cleanup
+E           _cleanup()
+E   
+E       return result
+E   
+E   
+E   def test_demos(demo_args):
+E       module, args = demo_args
+E       result = _test_demo(lambda: _run_module(module, args))
+E       assert result is not None
+E   
+E   
+E   def test_analyze_pickle1():
+E       d = mkdtemp()
+E       try:
+E           test_demos((&apos;pymordemos.thermalblock&apos;, [&apos;--pickle=&apos; + os.path.join(d, &apos;data&apos;), 2, 2, 2, 10]))
+E           test_demos((&apos;pymordemos.analyze_pickle&apos;,
+E                      [&apos;histogram&apos;, &apos;--error-norm=h1_0_semi&apos;, os.path.join(d, &apos;data_reduced&apos;), 10]))
+E       finally:
+E           shutil.rmtree(d)
+E   
+E   
+E   def test_analyze_pickle2():
+E       d = mkdtemp()
+E       try:
+E           test_demos((&apos;pymordemos.thermalblock&apos;, [&apos;--pickle=&apos; + os.path.join(d, &apos;data&apos;), 2, 2, 2, 10]))
+E           test_demos((&apos;pymordemos.analyze_pickle&apos;,
+E                      [&apos;histogram&apos;, &apos;--detailed=&apos; + os.path.join(d, &apos;data_detailed&apos;),
+E                       os.path.join(d, &apos;data_reduced&apos;), 10]))
+E       finally:
+E           shutil.rmtree(d)
+E   
+E   
+E   def test_analyze_pickle3():
+E       d = mkdtemp()
+E       try:
+E           test_demos((&apos;pymordemos.thermalblock&apos;, [&apos;--pickle=&apos; + os.path.join(d, &apos;data&apos;), 2, 2, 2, 10]))
+E           test_demos((&apos;pymordemos.analyze_pickle&apos;,
+E                      [&apos;convergence&apos;, &apos;--detailed=&apos; + os.path.join(d, &apos;data_detailed&apos;),
+E                       &apos;--error-norm=h1_0_semi&apos;, os.path.join(d, &apos;data_reduced&apos;), 10]))
+E       finally:
+E           shutil.rmtree(d)
+E   
+E   
+E   def test_analyze_pickle4():
+E       d = mkdtemp()
+E       try:
+E           test_demos((&apos;pymordemos.thermalblock&apos;, [&apos;--pickle=&apos; + os.path.join(d, &apos;data&apos;), 2, 2, 2, 10]))
+E           test_demos((&apos;pymordemos.analyze_pickle&apos;,
+E                      [&apos;convergence&apos;, &apos;--detailed=&apos; + os.path.join(d, &apos;data_detailed&apos;),
+E                       os.path.join(d, &apos;data_reduced&apos;), 10]))
+E       finally:
+E           shutil.rmtree(d)
+E   
+E   @pytest.mark.skipif(is_windows_platform(), reason=&apos;hangs indefinitely&apos;)
+E   def test_thermalblock_ipython(demo_args):
+E       if demo_args[0] != &apos;pymordemos.thermalblock&apos;:
+E           return
+E       from pymor.tools import mpi
+E       if mpi.parallel:  # simply running &apos;ipcluster start&apos; (without any profile) does not seem to work
+E           return        # when running under mpirun, so we do not test this combination for now
+E       try:
+E           test_demos((demo_args[0], [&apos;--ipython-engines=2&apos;] + demo_args[1]))
+E       finally:
+E           import time     # there seems to be no way to shutdown the IPyhton cluster s.t. a new
+E           time.sleep(10)  # cluster can be started directly afterwards, so we have to wait ...
+E   
+E   
+E   def test_thermalblock_results(thermalblock_args):
+E       from pymordemos import thermalblock
+E       results = _test_demo(lambda: thermalblock.main(list(map(str, thermalblock_args[1]))))
+E       # due to the symmetry of the problem and the random test parameters, the estimated
+E       # error may change a lot
+E       # fenics varies more than others between MPI/serial
+E       first_tolerance = (1e-13, 3.5e-6) if &apos;--fenics&apos; in thermalblock_args[1] else (1e-13, 1e-7)
+E       check_results(&apos;test_thermalblock_results&apos;, thermalblock_args[1], results,
+E                     first_tolerance, &apos;basis_sizes&apos;, &apos;norms&apos;, &apos;max_norms&apos;,
+E                     (1e-13, 4.), &apos;errors&apos;, &apos;max_errors&apos;, &apos;rel_errors&apos;, &apos;max_rel_errors&apos;,
+E                     &apos;estimates&apos;, &apos;max_estimates&apos;, &apos;effectivities&apos;, &apos;min_effectivities&apos;, &apos;max_effectivities&apos;, &apos;errors&apos;)
+E   
+E   
+E   def test_burgers_ei_results():
+E       from pymordemos import burgers_ei
+E       args = list(map(str, [1, 2, 10, 100, 10, 30]))
+E       ei_results, greedy_results = _test_demo(lambda: burgers_ei.main(args))
+E       ei_results[&apos;greedy_max_errs&apos;] = greedy_results[&apos;max_errs&apos;]
+E       check_results(&apos;test_burgers_ei_results&apos;, args, ei_results,
+E                     (1e-13, 1e-7), &apos;errors&apos;, &apos;triangularity_errors&apos;, &apos;greedy_max_errs&apos;)
+E   
+E   
+E   def test_parabolic_mor_results():
+E       from pymordemos import parabolic_mor
+E       args = [&apos;pymor&apos;, &apos;greedy&apos;, 5, 20, 3]
+E       results = _test_demo(lambda: parabolic_mor.main(*args))
+E       check_results(&apos;test_parabolic_mor_results&apos;, args, results,
+E                     (1e-13, 1e-7), &apos;basis_sizes&apos;, &apos;norms&apos;, &apos;max_norms&apos;,
+E                     (1e-13, 4.), &apos;errors&apos;, &apos;max_errors&apos;, &apos;rel_errors&apos;, &apos;max_rel_errors&apos;,
+E                     &apos;estimates&apos;, &apos;max_estimates&apos;, &apos;effectivities&apos;, &apos;min_effectivities&apos;, &apos;max_effectivities&apos;, &apos;errors&apos;)
+E   
+E   if __name__ == &quot;__main__&quot;:
+E       runmodule(filename=__file__)
+E                                                                                                         
+E   
+E   
+E                                                              
+E                          
+E                                        
+E                           
+E   
+E   
+E                                                                              
+E                                  
+E                                        
+E                           
+E   
+E   
+E                        
+E                 
+E                                   
+E   
+E                                
+E               
+E   
+E           
+E                                        
+E                            
+E                          
+E               
+E           
+E                        
+E                            
+E                          
+E               
+E   
+E                    
+E           
+E                          
+E                        
+E                                     
+E               
+E                               
+E                                                      
+E                     
+E   
+E                    
+E   
+E   
+E                             
+E                               
+E                                                             
+E                                
+E   
+E   
+E                              
+E                    
+E           
+E                                                                                                        
+E                                                   
+E                                                                                                    
+E               
+E                           
+E   
+E   
+E                              
+E                    
+E           
+E                                                                                                        
+E                                                   
+E                                                                                     
+E                                                             
+E               
+E                           
+E   
+E   
+E                              
+E                    
+E           
+E                                                                                                        
+E                                                   
+E                                                                                       
+E                                                                                       
+E               
+E                           
+E   
+E   
+E                              
+E                    
+E           
+E                                                                                                        
+E                                                   
+E                                                                                       
+E                                                             
+E               
+E                           
+E   
+E                                                                          
+E                                            
+E                                                    
+E                 
+E                                  
+E                                                                                                       
+E                                                                                                
+E           
+E                                                                             
+E               
+E                                                                                                
+E                                                                                               
+E   
+E   
+E                                                    
+E                                          
+E                                                                                            
+E                                                                                         
+E                               
+E                                                          
+E                                                                                                 
+E                                                                                
+E                                                                          
+E                                                                                         
+E                                                                                                                       
+E   
+E   
+E                                 
+E                                        
+E                                                     
+E                                                                             
+E                                                                 
+E                                                                 
+E                                                                                        
+E   
+E   
+E                                    
+E                                           
+E                                           
+E                                                              
+E                                                                 
+E                                                                        
+E                                                                                         
+E                                                                                                                       
+E   
+E                             
+E                                  ^
+E   SyntaxError: EOF while scanning triple-quoted string literal</error></testcase><testcase classname="" file="src/pymortests/discretization.py" name="src.pymortests.discretization" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/discretization.py:9: in &lt;module&gt;
+    from pymortests.fixtures.discretization import discretization, picklable_discretization
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/discretization.py:10: in &lt;module&gt;
+    from pymor.discretizers.cg import discretize_stationary_cg
+src/pymor/discretizers/cg.py:12: in &lt;module&gt;
+    from pymor.domaindiscretizers.default import discretize_domain_default
+src/pymor/domaindiscretizers/default.py:8: in &lt;module&gt;
+    from pymor.domaindescriptions.basic import RectDomain, CylindricalDomain, TorusDomain, LineDomain, CircleDomain
+E     File &quot;/src/src/pymor/domaindescriptions/basic.py&quot;, line 199
+E       return f&apos;TorusDomain({str(self.domain).replace(&quot;\n&quot;, &quot;,&quot;)})&apos;
+E             ^
+E   SyntaxError: f-string expression part cannot include a backslash</error></testcase><testcase classname="" file="src/pymortests/gui.py" name="src.pymortests.gui" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/gui.py:12: in &lt;module&gt;
+    from pymor.discretizers.cg import discretize_stationary_cg
+src/pymor/discretizers/cg.py:12: in &lt;module&gt;
+    from pymor.domaindiscretizers.default import discretize_domain_default
+src/pymor/domaindiscretizers/default.py:8: in &lt;module&gt;
+    from pymor.domaindescriptions.basic import RectDomain, CylindricalDomain, TorusDomain, LineDomain, CircleDomain
+E     File &quot;/src/src/pymor/domaindescriptions/basic.py&quot;, line 199
+E       return f&apos;TorusDomain({str(self.domain).replace(&quot;\n&quot;, &quot;,&quot;)})&apos;
+E             ^
+E   SyntaxError: f-string expression part cannot include a backslash</error></testcase><testcase classname="" file="src/pymortests/core/logger.py" name="src.pymortests.core.logger" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/core/logger.py:10: in &lt;module&gt;
+    from pymortests.fixtures.generic import basicinterface_subclass
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/generic.py:24: in &lt;module&gt;
+    @subclasses_of(BasicInterface)
+src/pymortests/fixtures/generic.py:21: in subclasses_of
+    return pytest.fixture(params=implementors(interface_type), **kwargs)
+src/pymortests/fixtures/generic.py:13: in implementors
+    _load_all()
+src/pymortests/base.py:38: in _load_all
+    __import__(module_name, level=0)
+src/pymor/analyticalproblems/burgers.py:9: in &lt;module&gt;
+    from pymor.domaindescriptions.basic import LineDomain, RectDomain, TorusDomain, CircleDomain
+E     File &quot;/src/src/pymor/domaindescriptions/basic.py&quot;, line 199
+E       return f&apos;TorusDomain({str(self.domain).replace(&quot;\n&quot;, &quot;,&quot;)})&apos;
+E             ^
+E   SyntaxError: f-string expression part cannot include a backslash</error></testcase><testcase classname="" file="src/pymortests/fixtures/analyticalproblem.py" name="src.pymortests.fixtures.analyticalproblem" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/analyticalproblem.py:7: in &lt;module&gt;
+    from pymor.domaindescriptions.basic import RectDomain
+E     File &quot;/src/src/pymor/domaindescriptions/basic.py&quot;, line 199
+E       return f&apos;TorusDomain({str(self.domain).replace(&quot;\n&quot;, &quot;,&quot;)})&apos;
+E             ^
+E   SyntaxError: f-string expression part cannot include a backslash</error></testcase><testcase classname="" file="src/pymortests/fixtures/discretization.py" name="src.pymortests.fixtures.discretization" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/discretization.py:10: in &lt;module&gt;
+    from pymor.discretizers.cg import discretize_stationary_cg
+src/pymor/discretizers/cg.py:12: in &lt;module&gt;
+    from pymor.domaindiscretizers.default import discretize_domain_default
+src/pymor/domaindiscretizers/default.py:8: in &lt;module&gt;
+    from pymor.domaindescriptions.basic import RectDomain, CylindricalDomain, TorusDomain, LineDomain, CircleDomain
+E     File &quot;/src/src/pymor/domaindescriptions/basic.py&quot;, line 199
+E       return f&apos;TorusDomain({str(self.domain).replace(&quot;\n&quot;, &quot;,&quot;)})&apos;
+E             ^
+E   SyntaxError: f-string expression part cannot include a backslash</error></testcase><testcase classname="" file="src/pymortests/fixtures/generic.py" name="src.pymortests.fixtures.generic" time="0"><error message="collection failure">/usr/local/lib/python3.6/site-packages/_pytest/python.py:445: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.6/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:971: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:955: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:656: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:626: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:308: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/generic.py:24: in &lt;module&gt;
+    @subclasses_of(BasicInterface)
+src/pymortests/fixtures/generic.py:21: in subclasses_of
+    return pytest.fixture(params=implementors(interface_type), **kwargs)
+src/pymortests/fixtures/generic.py:13: in implementors
+    _load_all()
+src/pymortests/base.py:38: in _load_all
+    __import__(module_name, level=0)
+src/pymor/analyticalproblems/burgers.py:9: in &lt;module&gt;
+    from pymor.domaindescriptions.basic import LineDomain, RectDomain, TorusDomain, CircleDomain
+E     File &quot;/src/src/pymor/domaindescriptions/basic.py&quot;, line 199
+E       return f&apos;TorusDomain({str(self.domain).replace(&quot;\n&quot;, &quot;,&quot;)})&apos;
+E             ^
+E   SyntaxError: f-string expression part cannot include a backslash</error></testcase></testsuite>
