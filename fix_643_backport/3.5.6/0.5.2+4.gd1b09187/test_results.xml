@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="25" failures="0" name="pytest" skips="0" tests="25" time="11.268"><testcase classname="" file="src/pymortests/analyticalproblem.py" name="src.pymortests.analyticalproblem" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/analyticalproblem.py:5: in &lt;module&gt;
+    from pymortests.fixtures.analyticalproblem import analytical_problem, picklable_analytical_problem
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/analyticalproblem.py:8: in &lt;module&gt;
+    from pymor.analyticalproblems.burgers import burgers_problem, burgers_problem_2d
+src/pymor/analyticalproblems/burgers.py:10: in &lt;module&gt;
+    from pymor.functions.basic import ConstantFunction, ExpressionFunction
+src/pymor/functions/basic.py:11: in &lt;module&gt;
+    from pymor.parameters.functionals import ExpressionParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/block.py" name="src.pymortests.block" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/block.py:8: in &lt;module&gt;
+    from pymor.operators.numpy import NumpyMatrixOperator
+src/pymor/operators/numpy.py:27: in &lt;module&gt;
+    from pymor.operators.constructions import IdentityOperator, ZeroOperator
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/complex_values.py" name="src.pymortests.complex_values" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/complex_values.py:7: in &lt;module&gt;
+    from pymor.operators.numpy import NumpyMatrixOperator
+src/pymor/operators/numpy.py:27: in &lt;module&gt;
+    from pymor.operators.constructions import IdentityOperator, ZeroOperator
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/discretization.py" name="src.pymortests.discretization" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/discretization.py:7: in &lt;module&gt;
+    from pymor.algorithms.basic import almost_equal
+src/pymor/algorithms/basic.py:11: in &lt;module&gt;
+    from pymor.operators.constructions import induced_norm
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/function.py" name="src.pymortests.function" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/function.py:9: in &lt;module&gt;
+    from pymor.functions.basic import ConstantFunction, GenericFunction
+src/pymor/functions/basic.py:11: in &lt;module&gt;
+    from pymor.parameters.functionals import ExpressionParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/grid.py" name="src.pymortests.grid" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/grid.py:14: in &lt;module&gt;
+    from pymortests.pickling import assert_picklable_without_dumps_function
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/pickling.py:13: in &lt;module&gt;
+    from pymor.operators.numpy import NumpyMatrixBasedOperator
+src/pymor/operators/numpy.py:27: in &lt;module&gt;
+    from pymor.operators.constructions import IdentityOperator, ZeroOperator
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/gui.py" name="src.pymortests.gui" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/gui.py:12: in &lt;module&gt;
+    from pymor.discretizers.cg import discretize_stationary_cg
+src/pymor/discretizers/cg.py:8: in &lt;module&gt;
+    from pymor.algorithms.preassemble import preassemble as preassemble_
+src/pymor/algorithms/preassemble.py:8: in &lt;module&gt;
+    from pymor.operators.constructions import (LincombOperator, Concatenation,
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/la.py" name="src.pymortests.la" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/la.py:7: in &lt;module&gt;
+    from pymor.operators.constructions import induced_norm
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/lyapunov.py" name="src.pymortests.lyapunov" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/lyapunov.py:13: in &lt;module&gt;
+    from pymor.operators.numpy import NumpyMatrixOperator
+src/pymor/operators/numpy.py:27: in &lt;module&gt;
+    from pymor.operators.constructions import IdentityOperator, ZeroOperator
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/operators.py" name="src.pymortests.operators" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/operators.py:8: in &lt;module&gt;
+    from pymor.algorithms.basic import almost_equal
+src/pymor/algorithms/basic.py:11: in &lt;module&gt;
+    from pymor.operators.constructions import induced_norm
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/pickling.py" name="src.pymortests.pickling" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/pickling.py:13: in &lt;module&gt;
+    from pymor.operators.numpy import NumpyMatrixBasedOperator
+src/pymor/operators/numpy.py:27: in &lt;module&gt;
+    from pymor.operators.constructions import IdentityOperator, ZeroOperator
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/riccati.py" name="src.pymortests.riccati" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/riccati.py:9: in &lt;module&gt;
+    from pymor.operators.numpy import NumpyMatrixOperator
+src/pymor/operators/numpy.py:27: in &lt;module&gt;
+    from pymor.operators.constructions import IdentityOperator, ZeroOperator
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/solver.py" name="src.pymortests.solver" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/solver.py:12: in &lt;module&gt;
+    from pymor.operators.numpy import NumpyMatrixOperator
+src/pymor/operators/numpy.py:27: in &lt;module&gt;
+    from pymor.operators.constructions import IdentityOperator, ZeroOperator
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/sylvester.py" name="src.pymortests.sylvester" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/sylvester.py:9: in &lt;module&gt;
+    from pymor.algorithms.sylvester import solve_sylv_schur
+src/pymor/algorithms/sylvester.py:7: in &lt;module&gt;
+    from pymor.algorithms.to_matrix import to_matrix
+src/pymor/algorithms/to_matrix.py:11: in &lt;module&gt;
+    from pymor.operators.block import BlockOperatorBase
+src/pymor/operators/block.py:8: in &lt;module&gt;
+    from pymor.operators.constructions import IdentityOperator, ZeroOperator
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/to_matrix.py" name="src.pymortests.to_matrix" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/to_matrix.py:9: in &lt;module&gt;
+    from pymor.algorithms.to_matrix import to_matrix
+src/pymor/algorithms/to_matrix.py:11: in &lt;module&gt;
+    from pymor.operators.block import BlockOperatorBase
+src/pymor/operators/block.py:8: in &lt;module&gt;
+    from pymor.operators.constructions import IdentityOperator, ZeroOperator
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/vectorarray.py" name="src.pymortests.vectorarray" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/vectorarray.py:11: in &lt;module&gt;
+    from pymor.algorithms.basic import almost_equal
+src/pymor/algorithms/basic.py:11: in &lt;module&gt;
+    from pymor.operators.constructions import induced_norm
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/algorithms/basic.py" name="src.pymortests.algorithms.basic" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/algorithms/basic.py:10: in &lt;module&gt;
+    from pymor.algorithms.basic import almost_equal, project_array, relative_error
+src/pymor/algorithms/basic.py:11: in &lt;module&gt;
+    from pymor.operators.constructions import induced_norm
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/algorithms/gram_schmidt.py" name="src.pymortests.algorithms.gram_schmidt" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/algorithms/gram_schmidt.py:7: in &lt;module&gt;
+    from pymor.algorithms.basic import almost_equal
+src/pymor/algorithms/basic.py:11: in &lt;module&gt;
+    from pymor.operators.constructions import induced_norm
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/core/logger.py" name="src.pymortests.core.logger" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/core/logger.py:10: in &lt;module&gt;
+    from pymortests.fixtures.generic import basicinterface_subclass
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/generic.py:24: in &lt;module&gt;
+    @subclasses_of(BasicInterface)
+src/pymortests/fixtures/generic.py:21: in subclasses_of
+    return pytest.fixture(params=implementors(interface_type), **kwargs)
+src/pymortests/fixtures/generic.py:13: in implementors
+    _load_all()
+src/pymortests/base.py:38: in _load_all
+    __import__(module_name, level=0)
+src/pymor/algorithms/basic.py:11: in &lt;module&gt;
+    from pymor.operators.constructions import induced_norm
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/fixtures/analyticalproblem.py" name="src.pymortests.fixtures.analyticalproblem" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/analyticalproblem.py:8: in &lt;module&gt;
+    from pymor.analyticalproblems.burgers import burgers_problem, burgers_problem_2d
+src/pymor/analyticalproblems/burgers.py:10: in &lt;module&gt;
+    from pymor.functions.basic import ConstantFunction, ExpressionFunction
+src/pymor/functions/basic.py:11: in &lt;module&gt;
+    from pymor.parameters.functionals import ExpressionParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/fixtures/discretization.py" name="src.pymortests.fixtures.discretization" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/discretization.py:10: in &lt;module&gt;
+    from pymor.discretizers.cg import discretize_stationary_cg
+src/pymor/discretizers/cg.py:8: in &lt;module&gt;
+    from pymor.algorithms.preassemble import preassemble as preassemble_
+src/pymor/algorithms/preassemble.py:8: in &lt;module&gt;
+    from pymor.operators.constructions import (LincombOperator, Concatenation,
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/fixtures/function.py" name="src.pymortests.fixtures.function" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/function.py:9: in &lt;module&gt;
+    from pymor.functions.basic import ConstantFunction, GenericFunction, ExpressionFunction
+src/pymor/functions/basic.py:11: in &lt;module&gt;
+    from pymor.parameters.functionals import ExpressionParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/fixtures/generic.py" name="src.pymortests.fixtures.generic" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/generic.py:24: in &lt;module&gt;
+    @subclasses_of(BasicInterface)
+src/pymortests/fixtures/generic.py:21: in subclasses_of
+    return pytest.fixture(params=implementors(interface_type), **kwargs)
+src/pymortests/fixtures/generic.py:13: in implementors
+    _load_all()
+src/pymortests/base.py:38: in _load_all
+    __import__(module_name, level=0)
+src/pymor/algorithms/basic.py:11: in &lt;module&gt;
+    from pymor.operators.constructions import induced_norm
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/fixtures/operator.py" name="src.pymortests.fixtures.operator" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/operator.py:8: in &lt;module&gt;
+    from pymor.operators.numpy import NumpyMatrixOperator
+src/pymor/operators/numpy.py:27: in &lt;module&gt;
+    from pymor.operators.constructions import IdentityOperator, ZeroOperator
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase><testcase classname="" file="src/pymortests/fixtures/vectorarray.py" name="src.pymortests.fixtures.vectorarray" time="0"><error message="collection failure">/usr/local/lib/python3.5/site-packages/_pytest/python.py:450: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/local/lib/python3.5/site-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+&lt;frozen importlib._bootstrap&gt;:968: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:957: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:664: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:634: in _load_backward_compatible
+    ???
+/usr/local/lib/python3.5/site-packages/_pytest/assertion/rewrite.py:295: in load_module
+    six.exec_(co, mod.__dict__)
+src/pymortests/fixtures/vectorarray.py:41: in &lt;module&gt;
+    from pymor.bindings.fenics import FenicsVectorSpace
+src/pymor/bindings/fenics.py:15: in &lt;module&gt;
+    from pymor.operators.constructions import ZeroOperator
+src/pymor/operators/constructions.py:19: in &lt;module&gt;
+    from pymor.parameters.functionals import ConjugateParameterFunctional
+E     File &quot;/src/src/pymor/parameters/functionals.py&quot;, line 165
+E       self.name = name or f&apos;{functional.name}_conj&apos;
+E                                                   ^
+E   SyntaxError: invalid syntax</error></testcase></testsuite>
